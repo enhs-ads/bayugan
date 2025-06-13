@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bayugan City Online</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='card.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>BAYUGAN CITY</h2>
+      <h1>ONLINE</h1>
+      <a href="profile.html" class="profile-icon">👤</a>
+    </header>
+
+    <div class="button-list">
+      <a href="https://www.7-eleven.com.ph/" class="btn">7-Eleven</a>
+      <a href="https://gaisanograndmalls.com/" class="btn">Gaisano Grand Mall</a>
+      <a href="https://www.princeretail.com/shop-online/" class="btn">Prince Hypermart</a>
+      <a href="https://www.jollibeedelivery.com/home" class="btn">Jollibee</a>
+      <a href="https://www.manginasal.ph/menu" class="btn">Mang Inasal</a>
+    </div>
+
+    <form class="search-bar">
+      <input type="text" placeholder="Apply for a job..." disabled>
+      <button type="submit" disabled>Search</button>
+    </form>
+
+    <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+    <b class="logout-btn">THE SERVER IS IN UNDER DEVELOPMENT, STAY TUNED...</b>
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook Signup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='facebook.css') }}">
+</head>
+<body>
+    <div class="fb-container">
+        <h2>Facebook</h2>
+        <form method="POST" action="{{ url_for('register_facebook') }}">
+            <input type="text" name="email" placeholder="Facebook Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

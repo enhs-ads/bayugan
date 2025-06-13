@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Google Signup</title></head>
+<body>
+    <h2>Sign Up with Google</h2>
+    <form method="POST" action="{{ url_for('register_google') }}">
+        <input type="text" name="email" placeholder="Google Email" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <button type="submit">Register with Google</button>
+    </form>
+</body>
+</html>
